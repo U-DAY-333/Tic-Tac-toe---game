@@ -3,15 +3,15 @@
 .mhead{
     background-color: black;
     color: white;
-    height: 65px;
-    font-size: 27px;
+    height: 5vw;
+    font-size: 5vw;
     display: flex;
     align-items: center;
     font-family: 'Sarabun', sans-serif;
 }
 
 *{
-    margin: 0;
+    margin: 0vw 0vw 0vw 0vw;
     padding: 0;
     /* background-color: cadetblue; */
 }
@@ -21,24 +21,24 @@
     /* background-color: teal; */
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 3% 0% 3% 0%;
 }
 
 .container
 {
     display: grid;
-    grid-template-rows: repeat(3 , 10vw);
-    grid-template-columns: repeat(3 , 10vw);
-    padding: 30px 50px 0 0;
+    grid-template-rows: repeat(3 , 9vw);
+    grid-template-columns: repeat(3 , 9vw);
+    padding: 3vw 6vw 2vw 6vw;
     background-color: #3d7783;
     border-radius: 0px;
 }
 
 .box
 {
-    border: 5px solid #3d7783;
-    border-radius: 15px;
-    font-size: 8vw;
+    border: 0.3vw solid #3d7783;
+    border-radius: 1.5vw;
+    font-size: 6vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,23 +55,29 @@
 {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    font-size: 30px;
+    font-size: 5vw;
 }
 
 .imgbox img
 {
     display: none;
+    size:
 }
 
+img
+{
+    max-height: 15vw;
+    max-width: 15vw;
+}
 #reset
 {
-    padding: 8px 30px;
-    margin: 0 0 0 50px;
+    padding: 0.25vw 2vw;
+    margin: 0 0 0 8vw;
     cursor: pointer;
     background-color: rgb(20, 24, 24);
     color: white;
-    border-radius: 40px;
-    font-size: 15px;
+    border-radius: 1vw;
+    font-size: 1.25vw;
 }
 
 body
@@ -86,7 +92,7 @@ body
 
 .info
 {
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -94,7 +100,8 @@ body
 
 .imgbox
 {
-    margin: 25px 0 50px 0;
+    margin: 2vw 0 3vw 0;
+    size: 5vw;
 }
 
 center
@@ -104,7 +111,7 @@ center
     align-items: center;
     background-color: black;
     color: white;
-    padding: 12px 0 13px 0;
+    padding: 0.9vw 0 0.9vw 0;
 }
 
 .footer
@@ -114,8 +121,24 @@ center
 
 .foot
 {
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
-    padding: 70px 0 0 650px;
+    padding: 1vw 38vw 0vw 38vw;
     margin: 0 0 0 0;
+}
+
+.red
+{
+    color: red;
+}
+
+h1
+{
+    display: flex;
+    font-size: 3vw;
+}
+
+.heading1
+{
+    margin-top: 3vw;
 }
