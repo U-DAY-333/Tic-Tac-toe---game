@@ -9,7 +9,8 @@ function clikcings()
     $(".box").click(function()
     { 
         c++;
-        this.innerHTML = a;
+        if(a == 'X') this.innerHTML = "<span style='color: red;'>" + a + "</span>";
+        else this.innerHTML = a;
         var ind = $(this).attr("class")[5];
     
         audio.play();
