@@ -2,6 +2,7 @@ var a = 'X'
 var audio = new Audio("red.mp3");
 var inp = [1,2,3,4,5,6,7,8];
 var c = 0 , d = 0;
+$("#reset").css("display" , "none");
 
 function clikcings()
 {
@@ -10,7 +11,7 @@ function clikcings()
     { 
         c++;
         var ind = $(this).attr("class")[5];
-    
+
         if(a == 'X') this.innerHTML = "<span style='color: red;'>" + a + "</span>";
         else this.innerHTML = a;
 
@@ -29,9 +30,10 @@ function clikcings()
         $("span.info").text("Turn for " + a);
         $(this).unbind();
         
-        var outcome = check()
+        var outcome = check();
         if(c == 9 && check() == 'z')
         {
+            $("#reset").css("display" , "flex");
             new Audio("tie.mp3").play();
              $("span.info").text("Draw");
              $(".heading1").text("Click reset button to Restart")
@@ -40,6 +42,7 @@ function clikcings()
         
         if(outcome == 'X' || outcome == 'O')
         {
+            $("#reset").css("display" , "flex");
             new Audio("win.mp3").play();
             $("span.info").text("player " + outcome + " wins!");
             $(".heading1").text("Click reset button to Restart")
@@ -52,7 +55,7 @@ function clikcings()
 
 clikcings()
 
-$("#reset").click(function(){ restart()});
+$("#reset").click(function() {restart()});
 
 function check()
 {
@@ -77,6 +80,7 @@ function restart()
     clikcings();
     $(".heading1").text("Play More and Enjoy More !!")
     $("img").css("display","none");
+    $("#reset").css("display" , "none");
 }
 
 function oringinal()
