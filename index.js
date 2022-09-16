@@ -35,7 +35,7 @@ function clikcings()
         var outcome = check();
         if(c == 9 && check() == 'z')
         {
-            $("#reset").css("display" , "flex");
+            $("#reset").css("display" , "initial");
             new Audio("tie.mp3").play();
              $("span.info").text("Draw");
              $(".heading1").text("Click reset button to Restart")
@@ -44,7 +44,7 @@ function clikcings()
         
         if(outcome == 'X' || outcome == 'O')
         {
-            $("#reset").css("display" , "flex");
+            $("#reset").css("display" , "initial");
             new Audio("win.mp3").play();
             $("span.info").text("player " + outcome + " wins!");
             $(".heading1").text("Click reset button to Restart")
