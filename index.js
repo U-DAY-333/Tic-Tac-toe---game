@@ -1,5 +1,5 @@
 var a = 'X'
-var audio = new Audio("red.mp3");
+var audio = new Audio("green.mp3");
 var inp = [1,2,3,4,5,6,7,8];
 var c = 0 , d = 0;
 $("#reset").css("display" , "none");
