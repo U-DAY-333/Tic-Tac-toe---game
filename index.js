@@ -15,7 +15,9 @@ function clikcings()
         if(a == 'X') this.innerHTML = "<span style='color: red;'>" + a + "</span>";
         else this.innerHTML = a;
 
-        audio.play();
+         if(a == 'X') audio.play();
+        else new Audio("yellow.mp3").play(); 
+       
         if(a == 'X') 
         {
             inp[ind] = a;
